@@ -1,0 +1,24 @@
+package prime;
+
+public class prime_num {
+public static void main(String[] args) {
+
+	for(int i=1;i<100;i++) {
+		boolean flag=true;
+		for(int j=2;j<i/2;j++) {
+			if(i%j==0) {
+				flag=false;
+				break;
+			}
+			
+		}
+	//	System.out.println(i);
+		if(flag==true && i!=1) {
+			System.out.println(i+"  is  prime");
+		}
+		//else {
+		//	System.out.println("not prime");
+		//}
+	}
+}
+}
